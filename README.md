@@ -6,13 +6,9 @@ This script was born in a few hours during a Sunday afternoon because I had a ne
 
 You probably don't need this, because this is a really specific use case. But if it can help someone, somewhere, then why not share it?
 
-# License
-
-[MIT License](./LICENSE)
-
 # Dependencies
 
-This script use `transmission-show` and `transmission-edit` which are parts of the `transmission-cli` package.
+This script use `transmission-show` and `transmission-edit` which are parts of the [`transmission-cli`](https://packages.debian.org/search?keywords=transmission-cli) package.
 
 # Limitations
 
@@ -25,10 +21,10 @@ This script use `transmission-show` and `transmission-edit` which are parts of t
 transmission-replace.sh: [options]
 
 Options:
- -t --tracker	<url>						Tracker URL to replace with
- -f --file		<torrent_file>	Specify a torrent file
- -v --verbose									Show debug information
- -h --help										Show this usage
+ -t --tracker <url>           Tracker URL to replace with
+ -f --file    <torrent_file>  Specify a torrent file
+ -v --verbose                 Show debug information
+ -h --help                    Show this usage
 ```
 
 # Examples
@@ -56,3 +52,7 @@ fd --max-depth 1 --extension torrent --exec ./transmission-replace.sh --tracker 
 - [ ] Add a `-b, --backup` argument to save the `.torrent` file before changing the tracker URL
 - [ ] Add a `-c, --confirm` argument to force the user to confirm the change (?)
 - [ ] Add a `-d, --dry-run` argument (?)
+
+# License
+
+[MIT License](./LICENSE)
