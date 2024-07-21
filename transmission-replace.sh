@@ -36,6 +36,7 @@ print_usage() {
 
 print_error() {
     printf "${RED}[Error] %s${RESET}\n" "$1"
+    exit 1
 }
 
 print_debug() {
